@@ -1,0 +1,62 @@
+QNO:1
+x=int(input('enter 1st no:'))
+y=int(input('enter 2nd no:'))
+z=input('select operator:')
+if z=='+':
+    print(x+y)
+elif z=='-':
+    print(x-y)
+elif z=='*':
+    print(x*y)
+elif z=='/':
+    print(x/y)
+elif z=='**':
+    print(x**y)
+else:
+    print('error')
+QNO:2
+x=[1,2,3,'xyz','a']
+y=[]
+for a in x:
+    if type=='int':
+        y.append(a)
+print(y)
+QNO:3
+d = {0:10, 1:20}
+print(d)
+d.update({2:30})
+print(d)
+QNO:4
+def returnSum(myDict): 
+      
+    sum = 0
+    for i in myDict: 
+        sum = sum + myDict[i] 
+      
+    return sum
+   
+dict = {'a': 100, 'b':200, 'c':300} 
+print("Sum :", returnSum(dict))
+QNO:5
+def Repeat(x): 
+    _size = len(x) 
+    repeated = [] 
+    for i in range(_size): 
+        k = i + 1
+        for j in range(k, _size): 
+            if x[i] == x[j] and x[i] not in repeated: 
+                repeated.append(x[i]) 
+    return repeated 
+list1 = [10, 20, 30, 20, 20, 30, 40,  
+         50, -20, 60, 60, -20, -20] 
+print (Repeat(list1)) 
+QNO:6
+d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+def is_key_present(x):
+  if x in d:
+      print('Key is present in the dictionary')
+  else:
+      print('Key is not present in the dictionary')
+is_key_present(5)
+is_key_present(9)
+    

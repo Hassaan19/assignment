@@ -1,0 +1,64 @@
+QNO:1
+
+def findFactorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * findFactorial(n-1)
+n=int(input("Input a number to compute the factiorial : "))
+print(findFactorial(n))
+
+QNO:2
+
+def calc_Upper_Lower_case(s):
+    upper_case = 0
+    lower_case = 0
+    for char in s:
+        if char.isupper():
+           upper_case +=1
+        elif char.islower():
+           lower_case +=1
+        else:
+           pass
+    
+    print ("No. of Upper case characters : ", upper_case)
+    print ("No. of Lower case Characters : ", lower_case)
+
+calc_Upper_Lower_case('The is A String for tesTing.')
+
+QNO:3
+
+my_list = [10, 212, 8, 45, 6,33] 
+  
+for num in my_list:  
+    if num % 2 == 0: 
+       print(num)
+       
+QNO:4
+
+def isPalindrome(s):
+    left_pos = 0
+    right_pos = len(s) - 1
+
+    while right_pos >= left_pos:
+        if not s[left_pos] == s[right_pos]:
+            return False
+        left_pos += 1
+        right_pos -= 1
+    return True
+print(isPalindrome('aaq')) 
+print(isPalindrome('madam')) 
+
+QNO:5
+
+def prime(n):
+    if (n==1):
+        return False
+    elif (n==2):
+        return True;
+    else:
+        for x in range(2,n):
+            if(n % x==0):
+                return False
+        return True             
+print(prime(19))

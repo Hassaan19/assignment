@@ -1,0 +1,72 @@
+QNO:1
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", 
+which can contain data, in the form of fields (often known as attributes or properties), and code, 
+in the form of procedures (often known as maethods). A feature of objects is an object's procedures 
+that can access and often modify the data fields of the object with which they are associated (objects have a notion of 
+"this" or "self"). In OOP, computer programs are designed by making them out of objects that interact with one another.
+
+QNO:2
+1. Modularity for easier troubleshooting
+2. Reuse of code through inheritance
+3. Flexibility through polymorphism
+4. Effective problem solving
+
+QNO:3
+class Door:
+  def open(self):
+    print 'hello'
+
+def knock_door:
+  a_door = Door()
+  Door.open(a_door)
+
+knock_door()
+
+The example given shows you a class called "Door" which has a method or action called "open", it is called a method because 
+it was declared inside a class. There is another portion of code with "def" just below which defines a function, it is a 
+function because it is not declared inside a class, this function calls the method we defined inside our class as you can 
+see and finally the function is being called by itself.
+
+As you can see you can call a function anywhere but if you want to call a method either you have to pass a new object 
+of the same type as the class the method is declared (Class.method(object)) or you have to invoke the method inside the
+object (object.Method())
+
+QNO:4
+Class:
+In object-oriented programming, a class is an extensible program-code-template for creating objects, providing initial values 
+for state (member variables) and implementations of behavior (member functions or methods)
+Object:
+Object is simply a collection of data (variables) and methods (functions) that act on those data. 
+Attribute:
+Attribute-oriented programming (@OP) is a program-level marking technique. Programmers can mark program elements (e.g. classes 
+and methods) to indicate that they maintain application-specific or domain-specific semantics. For example, some programmers 
+may define a "logging" attribute and associate it with a method to indicate the method should implement a logging function
+
+QNO:5
+class car:
+    
+    # attributes
+        year = 2016     # car model's year
+        mpg =  20       # mileage
+        speed = 100     # current speed
+        
+    # methods
+        def accelerate(self):
+            return car.speed + 20
+
+        def brake(self):
+            return car.speed - 50
+        
+car1=car()
+
+car1.accelerate()
+120
+
+car1.brake()
+50
+
+car1.year
+2016
+
+car1.mpg
+20
